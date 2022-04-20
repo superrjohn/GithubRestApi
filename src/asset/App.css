@@ -1,0 +1,23 @@
+section {
+  height: 100vh;
+  text-shadow: 1px 1px rgba(50, 50, 70, 0.5);
+  padding: 1vh;
+  margin: 1vh
+}
+
+.UserName img {
+  height: 17vh;
+  width: 17vh;
+  margin: 0 auto;
+}
+
+.repos {
+  border: 1px solid green;
+  overflow-y: auto;
+  height: 70vh;
+
+}
+
+.repos a{
+  text-decoration: none;
+}
