@@ -32,12 +32,15 @@ export default function ReposList() {
   }
 
   React.useEffect(() => {
-    getAPI(10, 1).then((res) => {
-      setUserData(res.data)
+    const fetchData = async () => {
+      const result = await getAPI(10, 1)
+      setUserData(result.data)
       //console.log(res.data)
       setLoading(false)
-    })
-  }, [user])
+      console.log(1)
+    }
+    fetchData()
+  }, [])
 
   if (isLoading) {
     return (

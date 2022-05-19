@@ -22,12 +22,15 @@ export default function Repo() {
   }
 
   React.useEffect(() => {
-    getAPI().then((res) => {
-     setUserData(res.data)
-     //console.log(res.data)
-     setLoading(false)
-    })
-   }, [user])
+    const fetchData = async () => {
+      const result = await getAPI()
+      setUserData(result.data)
+      //console.log(res.data)
+      setLoading(false)
+      console.log(1)
+    }
+    fetchData()
+  }, [user])
 
    if (isLoading) {
     return (
