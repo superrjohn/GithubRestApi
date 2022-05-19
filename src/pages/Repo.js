@@ -14,7 +14,7 @@ export default function Repo() {
   function getAPI(per_page,page) {
     return request({
       url: `repos/${user.username}/${user.repo}`,
-      params: {
+      params:{
         per_page,
         page
       }

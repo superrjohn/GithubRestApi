@@ -57,7 +57,7 @@ export default function ReposList() {
               {data.name}{ '  '}{data.language == null? '': `/ ${data.language}`}
             </Accordion.Header>
             <Accordion.Body>
-              <Outlet />
+              <Outlet/>
             </Accordion.Body>
           </Accordion.Item>
       ))}
